@@ -3,7 +3,7 @@ title: "From SFTP to data lake with Azure Functions in C#" # Title of the blog p
 date: 2021-03-14T17:43:57+01:00 # Date of post creation.
 description: "how to extract reports from a SFTP og FTPS with an Azure App Service and save them in a data lake" # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
-draft: true # Sets whether to render this page. Draft of true will not be rendered.
+draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 featureImage: "pipes-croped.jpg" # Sets featured image on blog post.
