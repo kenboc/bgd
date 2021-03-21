@@ -1,0 +1,36 @@
+Installer Hugo:
+    Installer Chocoltey: https://chocolatey.org/install
+    Fremsøg derefter hugo på samme side og anvend Hugo Extend
+    $ hugo new site .
+    $ git init
+    A:
+        $ git submodule add https://github.com/kenboc/hugo-theme-docport.git themes/docport
+    B:
+        https://themes.gohugo.io/hugo-clarity/
+        $ git submodule add https://github.com/chipzoller/hugo-clarity themes/hugo-clarity
+
+    $ git submodule init
+    $ git submodule update
+    Skriv i config.toml: theme = "docport"
+    Kør: hugo server -D (-D = include drafts)
+    
+    Upload til github fra Visual studio code:
+        Opret nyt repository på github
+        Kopider kommandoer og kør dem:
+            git remote add origin https://github.com/kenboc/render5.git
+            git branch -M main
+            git push -u origin main
+    
+    Upload til render.com:
+        Vælg New > Static site
+        Log på github og vælg relevante repository
+        Under Build Command, skriv: hugo --gc --minify
+        Under Publish Directory, skriv: public
+
+Genveje:
+    Ny post: hugo new post/azure/my-first-post3.md
+
+Bedre end jekyl:
+    Skal ikke bruge tid på at lukke server - bare tryk ctrl+c
+    Server uploader ved ændringer i toml - det gør jekyll ikke
+    Jeg er meget hurtigt i gang

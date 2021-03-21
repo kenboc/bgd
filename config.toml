@@ -1,5 +1,5 @@
-baseURL = ""
-languageCode = "da-dk"
+baseURL = "https://bgd.dk"
+languageCode = "en-us"
 title = "Bygdrift"
 author = "Kenneth Christensen"
 # canonifyurls = true
@@ -8,7 +8,7 @@ theme = "hugo-clarity"
 
 disqusShortname = ""
 
-DefaultContentLanguage = "da" 
+DefaultContentLanguage = "en" 
 # [languages]
 # config/_default/languages.toml
 
@@ -44,7 +44,7 @@ series = "series"
 author = "Kenneth Christensen"
 # twitter = "@janedoe"
 # largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
-introDescription = "Dataanalyse, bygningsdrift"
+introDescription = "Data analysis, building maintenance"
 introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
  description = "test" # set your site's description here. will be use for home page content meta tags (seo). Alternatively set this description in your homepage content file i.e content/_index.md. Whatever is set in the latter will take precedence
 
@@ -93,8 +93,8 @@ mobileNavigation = "left" # if you prefer right change to 'right'
 
 # please also not that mode toggle UI will remain in place. That way, if a user prefers darkmode, they can have their way.
 
-enforceLightMode = false
-# enforceDarkMode = false
+# enforceLightMode = false
+ enforceDarkMode = true
 
 # customize footer icon. see issue https://github.com/chipzoller/hugo-clarity/issues/77
 # footerLogo = "logos/bgd-logo-180x180.png"
@@ -123,6 +123,6 @@ enforceLightMode = false
  since = 2021
 [params.plausible_analytics]
 enable = false # to enable plausible analytics set to true.
-websiteDomain = "example.com" # domain name of your website, most cases same as your base url
+websiteDomain = "https://bgd.dk" # domain name of your website, most cases same as your base url
 # plausibleDomain = "plausible.io" # default is set to plausible.io, only required if plausible is selfhosted
 # scritpName = "plausible" # default is set to plausible, only required if using a custome name for script
