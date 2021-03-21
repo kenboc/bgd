@@ -39,10 +39,10 @@ Finally the service app, uploads the files, directly to a data lake in Azure. I 
 
 ## Azure Functions timer trigger
 
-I created this Azure Function version V3:
+I created this Azure Function version V3 ([link](https://github.com/hillerod/Warehouse.Fileup/blob/master/Warehouse.Fileup.Functions/DaluxFMFromFTP/TimerTrigger.cs)):
 
 ```csharp
-[FunctionName("MonitoringFTP")]
+[FunctionName("DaluxFMFromFTP_TimerTrigger")]
 public static void Run([TimerTrigger("0 0 * * * *")] TimerInfo myTimer, ILogger log)
 {}
 ```
@@ -65,7 +65,7 @@ In `local.settings.json`, I have:
   }
 }
 ```
-Instead of having `host, user, password and path` as individual variables, I have gathered them into one connection-string, and then extended ssh.net with a helper. Build it like this:
+Instead of having `host, user, password and path` as individual variables, I have gathered them into one connection-string, and then extended ssh.net with a helper. Build it like this ([link](https://github.com/hillerod/Warehouse.Fileup/blob/master/Warehouse.Fileup.Functions/Helpers/FTPClientHelper.cs)):
 
 ```csharp
 using Renci.SshNet;
