@@ -1,5 +1,5 @@
 ---
-title: "From SFTP to data lake with Azure Functions in C#" # Title of the blog post.
+title: "From SFTP/FTPS to Data Lake with Azure Functions in C#" # Title of the blog post.
 date: 2021-03-14T17:43:57+01:00 # Date of post creation.
 description: "how to extract reports from a SFTP og FTPS with an Azure App Service and save them in a data lake" # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
@@ -8,7 +8,7 @@ toc: false # Controls if a table of contents should be generated for first-level
 # menu: main
 featureImage: "pipes-croped.jpg" # Sets featured image on blog post.
 thumbnail: "/blog-thumbs/azure-data-lake.png" # Sets thumbnail image appearing inside card on homepage.
-shareImage: "/blog-thumbs/azure-data-lake.png" # Designate a separate image for social media sharing.
+# shareImage: "/blog-thumbs/azure-data-lake.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
 figurePositionShow: true # Override global value for showing the figure label.
@@ -35,11 +35,11 @@ The data gets cleaned up and converted from `xlsx` to `csv`.
 
 Finally the service app, uploads the files, directly to a data lake in Azure. I could have send them to an event hub, and made a more separated code, but it will do for now.
 
-![The system flow](flow.drawio.svg)
+![The system flow::img-120](flow.drawio.svg)
 
 ## Azure Functions timer trigger
 
-I created this Azure Function version V3 ([link](https://github.com/hillerod/Warehouse.Fileup/blob/master/Warehouse.Fileup.Functions/DaluxFMFromFTP/TimerTrigger.cs)):
+I created this Azure Function version V3 ([full version on GitHub](https://github.com/hillerod/Warehouse.Fileup/blob/master/Warehouse.Fileup.Functions/DaluxFMFromFTP/TimerTrigger.cs)):
 
 ```csharp
 [FunctionName("DaluxFMFromFTP_TimerTrigger")]
@@ -65,7 +65,7 @@ In `local.settings.json`, I have:
   }
 }
 ```
-Instead of having `host, user, password and path` as individual variables, I have gathered them into one connection-string, and then extended ssh.net with a helper. Build it like this ([link](https://github.com/hillerod/Warehouse.Fileup/blob/master/Warehouse.Fileup.Functions/Helpers/FTPClientHelper.cs)):
+Instead of having `host, user, password and path` as individual variables, I have gathered them into one connection-string, and then extended ssh.net with a helper. Build it like this ([full version on GitHub](https://github.com/hillerod/Warehouse.Fileup/blob/master/Warehouse.Fileup.Functions/Helpers/FTPClientHelper.cs)):
 
 ```csharp
 using Renci.SshNet;

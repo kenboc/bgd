@@ -5,6 +5,7 @@ author = "Kenneth Christensen"
 # canonifyurls = true
 paginate = 10
 theme = "hugo-clarity"
+enableEmoji = true
 
 disqusShortname = ""
 
