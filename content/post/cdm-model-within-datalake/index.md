@@ -91,4 +91,4 @@ In this example, the Space management dataset are reused by two reports. With th
 Until now, is has only been possible to link to on dataset from a report, but this feature has just become available in preview-mode - and it's awesome!
 Go to Options and turn it on:
 ![::img-50](powerbi-preview-feature.png)
-Read more in this [blog](https://exceleratorbi.com.au/the-most-important-update-to-power-bi-desktop-ever/), where Matt Allington calls it the most important update to Power BI desktop, ever :thumbsup:
+Read more in this [blog](https://exceleratorbi.com.au/the-most-important-update-to-power-bi-desktop-ever/), where Matt Allington calls it "The most important update to Power BI desktop, ever!" :thumbsup:
