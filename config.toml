@@ -1,4 +1,4 @@
-baseURL = "https://bgd.dk"
+baseURL = "https://bgd.dk/"
 languageCode = "en-us"
 title = "Bygdrift"
 author = "Kenneth Christensen"
