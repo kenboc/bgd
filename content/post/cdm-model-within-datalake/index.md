@@ -20,7 +20,7 @@ tags:
 # comment: false # Disable comment if false.
 ---
 
-In our department, we are building an infrastructure, to aggregate our data in a data warehouse and publish them in a secure environment through Power BI as datasets and reports. 
+In our department, we are building an infrastructure, to aggregate our data in a data warehouse and publish them in a secure environment through Power BI as datasets and reports..
 <!--more-->
 
 ## The goal
