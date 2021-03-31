@@ -20,7 +20,7 @@ tags:
 # comment: false # Disable comment if false.
 ---
 
-In our department, we are building an infrastructure, to aggregate our data in a data warehouse and publish them in a secure environment through Power BI as datasets and reports..
+In our department, we are building an infrastructure, to aggregate our data in a data warehouse and publish them in a secure environment through Power BI as datasets and reports.
 <!--more-->
 
 ## The goal
@@ -57,17 +57,17 @@ In Power BI Desktop, you now create a report that uses the dataflow:
 
 ![Select Dataflow::img-50](powerbi-create-dataflow-4.png)
 
-Select which tables from CDM, you want to fetch into the report.
+Select which tables from CDM, you want to fetch into the report:
 
 ![Select tables to import from dataflow::img-50](powerbi-create-dataflow-5.png)
 
-Do some clean up of the data an you can create relationships between tables. Put in a text field that says "Only dataset"
+Do some clean up of the data an you can create relationships between tables. Put in a text field that says "Only dataset":
 
 ![Setup the report::img-50](powerbi-create-dataflow-6.png)
 
-Publish the report to your workspace
+Publish the report to your workspace:
 
-![Publish report::img-50](powerbi-create-dataflow-7.png)
+![::img-50](powerbi-create-dataflow-7.png)
 
 There are now three items in the workspace, where one of them are the dataset. It comes from the report and you can actually delete the report, but leave it because it will come up every time you publish new changes:
 
