@@ -50,24 +50,31 @@ Power BI recently launched the ability to fetch data from a common data model (C
 At Power BI server, create a workspace that are only for datasets. I call it "Ejendomme: Datasets" ('Ejendomme' is our department).
 
 If you already have a CDM, you can make the dataflow here (it is only in preview, as I write):
+
 ![on app.powerbi.com, select new Dataflow::img-50](powerbi-create-dataflow-1.png)
 
 In Power BI Desktop, you now create a report that uses the dataflow:
+
 ![Select Dataflow::img-50](powerbi-create-dataflow-4.png)
 
 Select which tables from CDM, you want to fetch into the report.
+
 ![Select tables to import from dataflow::img-50](powerbi-create-dataflow-5.png)
 
 Do some clean up of the data an you can create relationships between tables. Put in a text field that says "Only dataset"
+
 ![Setup the report::img-50](powerbi-create-dataflow-6.png)
 
 Publish the report to your workspace
+
 ![Publish report::img-50](powerbi-create-dataflow-7.png)
 
 There are now three items in the workspace, where one of them are the dataset. It comes from the report and you can actually delete the report, but leave it because it will come up every time you publish new changes:
+
 ![Items in workspace::img-50](powerbi-create-dataflow-8.png)
 
 Finally, select the dataset on the server and select Settings. Define how often the data should be fetched from the data lake and over to Power BI - it can be done as often as 8 times per day:
+
 ![Items in workspace::img-50](powerbi-create-dataflow-9.png)
 
 ## Where to use datasets
@@ -90,5 +97,7 @@ In this example, the Space management dataset are reused by two reports. With th
 
 Until now, is has only been possible to link to on dataset from a report, but this feature has just become available in preview-mode - and it's awesome!
 Go to Options and turn it on:
+
 ![::img-50](powerbi-preview-feature.png)
+
 Read more in this [blog](https://exceleratorbi.com.au/the-most-important-update-to-power-bi-desktop-ever/), where Matt Allington calls it "The most important update to Power BI desktop, ever!" :thumbsup:
